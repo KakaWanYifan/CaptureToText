@@ -79,5 +79,10 @@ namespace CaptureToText
         {
             System.Diagnostics.Process.Start(CapturePath);
         }
+
+        private void ni_Main_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.Show();
+        }
     }
 }

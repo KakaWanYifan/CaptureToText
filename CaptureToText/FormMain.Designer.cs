@@ -38,9 +38,9 @@
             this.ni_Main = new System.Windows.Forms.NotifyIcon(this.components);
             this.cms_Main = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmi_Exit = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_History = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_ShowMain = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Capture = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmi_History = new System.Windows.Forms.ToolStripMenuItem();
             this.label4 = new System.Windows.Forms.Label();
             this.cms_Main.SuspendLayout();
             this.SuspendLayout();
@@ -99,6 +99,7 @@
             this.ni_Main.Icon = ((System.Drawing.Icon)(resources.GetObject("ni_Main.Icon")));
             this.ni_Main.Text = "CaptureToText";
             this.ni_Main.Visible = true;
+            this.ni_Main.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ni_Main_MouseDoubleClick);
             // 
             // cms_Main
             // 
@@ -109,35 +110,35 @@
             this.tsmi_Capture});
             this.cms_Main.Name = "cms_Main";
             this.cms_Main.ShowImageMargin = false;
-            this.cms_Main.Size = new System.Drawing.Size(128, 114);
+            this.cms_Main.Size = new System.Drawing.Size(70, 92);
             // 
             // tsmi_Exit
             // 
             this.tsmi_Exit.Name = "tsmi_Exit";
-            this.tsmi_Exit.Size = new System.Drawing.Size(127, 22);
+            this.tsmi_Exit.Size = new System.Drawing.Size(69, 22);
             this.tsmi_Exit.Text = "退出";
             this.tsmi_Exit.Click += new System.EventHandler(this.tsmi_Exit_Click);
+            // 
+            // tsmi_History
+            // 
+            this.tsmi_History.Name = "tsmi_History";
+            this.tsmi_History.Size = new System.Drawing.Size(69, 22);
+            this.tsmi_History.Text = "历史";
+            this.tsmi_History.Click += new System.EventHandler(this.tsmi_History_Click);
             // 
             // tsmi_ShowMain
             // 
             this.tsmi_ShowMain.Name = "tsmi_ShowMain";
-            this.tsmi_ShowMain.Size = new System.Drawing.Size(127, 22);
+            this.tsmi_ShowMain.Size = new System.Drawing.Size(69, 22);
             this.tsmi_ShowMain.Text = "设置";
             this.tsmi_ShowMain.Click += new System.EventHandler(this.tsmi_ShowMain_Click);
             // 
             // tsmi_Capture
             // 
             this.tsmi_Capture.Name = "tsmi_Capture";
-            this.tsmi_Capture.Size = new System.Drawing.Size(127, 22);
+            this.tsmi_Capture.Size = new System.Drawing.Size(69, 22);
             this.tsmi_Capture.Text = "截图";
             this.tsmi_Capture.Click += new System.EventHandler(this.tsmi_Capture_Click);
-            // 
-            // tsmi_History
-            // 
-            this.tsmi_History.Name = "tsmi_History";
-            this.tsmi_History.Size = new System.Drawing.Size(127, 22);
-            this.tsmi_History.Text = "历史";
-            this.tsmi_History.Click += new System.EventHandler(this.tsmi_History_Click);
             // 
             // label4
             // 
