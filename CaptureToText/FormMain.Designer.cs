@@ -37,23 +37,25 @@
             this.tb_secretkey = new System.Windows.Forms.TextBox();
             this.ni_Main = new System.Windows.Forms.NotifyIcon(this.components);
             this.cms_Main = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tsmi_Capture = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_ShowMain = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_Capture = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_History = new System.Windows.Forms.ToolStripMenuItem();
+            this.label4 = new System.Windows.Forms.Label();
             this.cms_Main.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_Desc
             // 
             this.tb_Desc.Font = new System.Drawing.Font("宋体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tb_Desc.Location = new System.Drawing.Point(12, 12);
+            this.tb_Desc.Location = new System.Drawing.Point(12, 33);
             this.tb_Desc.Multiline = true;
             this.tb_Desc.Name = "tb_Desc";
             this.tb_Desc.ReadOnly = true;
-            this.tb_Desc.Size = new System.Drawing.Size(368, 130);
+            this.tb_Desc.Size = new System.Drawing.Size(368, 109);
             this.tb_Desc.TabIndex = 0;
-            this.tb_Desc.Text = "帮助与说明\r\n\r\n1、截图等操作请右键单击桌面右下角的图标\r\n2、首次使用请填写API Key和Secret Key\r\n3、请通过以下网址申请API Key和Se" +
-    "cret Key\r\n   https://ai.baidu.com/tech/ocr/general";
+            this.tb_Desc.Text = "1、截图等操作请右键单击桌面右下角的图标\r\n2、首次使用请填写API Key和Secret Key\r\n3、请通过以下网址申请API Key和Secret Key\r" +
+    "\n   https://ai.baidu.com/tech/ocr/general";
             // 
             // label1
             // 
@@ -102,17 +104,12 @@
             // 
             this.cms_Main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmi_Exit,
+            this.tsmi_History,
             this.tsmi_ShowMain,
             this.tsmi_Capture});
             this.cms_Main.Name = "cms_Main";
             this.cms_Main.ShowImageMargin = false;
-            this.cms_Main.Size = new System.Drawing.Size(128, 92);
-            // 
-            // tsmi_Capture
-            // 
-            this.tsmi_Capture.Name = "tsmi_Capture";
-            this.tsmi_Capture.Size = new System.Drawing.Size(127, 22);
-            this.tsmi_Capture.Text = "截图";
+            this.cms_Main.Size = new System.Drawing.Size(128, 114);
             // 
             // tsmi_Exit
             // 
@@ -128,11 +125,35 @@
             this.tsmi_ShowMain.Text = "设置";
             this.tsmi_ShowMain.Click += new System.EventHandler(this.tsmi_ShowMain_Click);
             // 
+            // tsmi_Capture
+            // 
+            this.tsmi_Capture.Name = "tsmi_Capture";
+            this.tsmi_Capture.Size = new System.Drawing.Size(127, 22);
+            this.tsmi_Capture.Text = "截图";
+            this.tsmi_Capture.Click += new System.EventHandler(this.tsmi_Capture_Click);
+            // 
+            // tsmi_History
+            // 
+            this.tsmi_History.Name = "tsmi_History";
+            this.tsmi_History.Size = new System.Drawing.Size(127, 22);
+            this.tsmi_History.Text = "历史";
+            this.tsmi_History.Click += new System.EventHandler(this.tsmi_History_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "帮助与说明";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 373);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.tb_secretkey);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_apikey);
@@ -162,6 +183,8 @@
         private System.Windows.Forms.ToolStripMenuItem tsmi_Capture;
         private System.Windows.Forms.ToolStripMenuItem tsmi_Exit;
         private System.Windows.Forms.ToolStripMenuItem tsmi_ShowMain;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_History;
     }
 }
 
