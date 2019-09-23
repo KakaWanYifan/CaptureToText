@@ -7,6 +7,5 @@ First Capture,Then transfer the capture to text.
 
 CaptureToText 视频介绍  https://www.bilibili.com/video/av67376004/
 
-#### 该软件仅针对Windows用户
-#### Mac用户可以考虑这个
+该软件仅针对Windows用户，Mac用户可以考虑这个
 https://github.com/gragrance/CaptuocrToy
